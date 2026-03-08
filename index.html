@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask Better — Empowering Questions That Rewire Your Mind</title>
+  <meta name="description" content="Stop telling yourself what to believe. Start asking questions your brain can't ignore. 20,000+ empowering questions across 44 life categories. Not affirmations — something better.">
+  <meta name="theme-color" content="#1C1917">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://armandojimenez.dev/ask-better/">
+
+  <!-- Prevent FOUC for saved language -->
+  <script>
+    try { var s = localStorage.getItem('askbetter-lang'); if (s === 'es') { document.documentElement.setAttribute('data-lang', 'es'); document.documentElement.setAttribute('lang', 'es'); } } catch(e) {}
+  </script>
+
+  <!-- Safari Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=6759526483">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, iMessage, etc.) -->
+  <meta property="og:title" content="Ask Better — Empowering Questions That Rewire Your Mind">
+  <meta property="og:description" content="Not affirmations. Empowering questions that rewire how your mind works. 20,000+ curated questions across 44 categories.">
+  <meta property="og:image" content="https://armandojimenez.dev/ask-better/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ask Better — Not affirmations. Empowering questions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://armandojimenez.dev/ask-better/">
+  <meta property="og:site_name" content="Ask Better">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ask Better — Empowering Questions That Rewire Your Mind">
+  <meta name="twitter:description" content="Not affirmations. Empowering questions that rewire how your mind works. 20,000+ curated questions across 44 categories.">
+  <meta name="twitter:image" content="https://armandojimenez.dev/ask-better/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Ask Better — Not affirmations. Empowering questions.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1" defer></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Ask Better",
+    "description": "Empowering questions that rewire how your mind works. Not affirmations — something better.",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/app-icon.png" alt="Ask Better" width="32" height="32">
+        <span class="nav-logo-text">Ask Better</span>
+      </a>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-option active" data-value="en">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option" data-value="es">ES</span>
+        </button>
+        <a href="#download" class="nav-cta">
+          <span class="lang-en">Download</span>
+          <span class="lang-es">Descargar</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <img src="assets/app-icon.png" alt="" class="hero-icon" width="72" height="72">
+          <h1 class="hero-title anim-fade-up">
+            <span class="lang-en">Ask Better<span class="dot">.</span><br>Become More<span class="dot">.</span></span>
+            <span class="lang-es">Pregunta Mejor<span class="dot">.</span><br>Conviértete en Más<span class="dot">.</span></span>
+          </h1>
+          <p class="hero-subtitle anim-fade-up anim-delay-1">
+            <span class="lang-en">Not affirmations. Empowering questions that rewire how your mind works.</span>
+            <span class="lang-es">No son afirmaciones. Son preguntas empoderadoras que transforman tu mente.</span>
+          </p>
+          <div class="hero-buttons anim-fade-up anim-delay-2">
+            <a href="https://apps.apple.com/us/app/ask-better-daily-questions/id6759526483" class="store-badge" target="_blank" rel="noopener">
+              <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=dev.armandojimenez.afformations" class="store-badge" target="_blank" rel="noopener">
+              <img src="assets/google-play-badge.svg" alt="Get it on Google Play" width="174" height="52">
+            </a>
+          </div>
+        </div>
+        <div class="hero-phone anim-fade-up anim-delay-2">
+          <div class="phone-device">
+            <img src="assets/screenshots/en/hero-home.png" alt="Ask Better home screen showing an empowering question card" class="phone-screen lang-en" loading="lazy">
+            <img src="assets/screenshots/es/hero-home.png" alt="Pantalla principal de Ask Better mostrando una tarjeta de pregunta empoderadora" class="phone-screen lang-es" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <i class="ph ph-caret-down"></i>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stats-inner">
+        <div class="stat-item anim-fade-up">
+          <span class="stat-number">20,000+</span>
+          <span class="stat-label">
+            <span class="lang-en">Curated Questions</span>
+            <span class="lang-es">Preguntas Curadas</span>
+          </span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item anim-fade-up anim-delay-1">
+          <span class="stat-number">44</span>
+          <span class="stat-label">
+            <span class="lang-en">Life Categories</span>
+            <span class="lang-es">Categorías de Vida</span>
+          </span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item anim-fade-up anim-delay-2">
+          <span class="stat-number">2</span>
+          <span class="stat-label">
+            <span class="lang-en">Practice Modes</span>
+            <span class="lang-es">Modos de Práctica</span>
+          </span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item anim-fade-up anim-delay-3">
+          <span class="stat-number">0</span>
+          <span class="stat-label">
+            <span class="lang-en">Ads. Ever.</span>
+            <span class="lang-es">Anuncios. Nunca.</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Method -->
+    <section class="method" id="method">
+      <div class="method-inner">
+        <p class="section-overline anim-fade-up">
+          <span class="lang-en">The Method</span>
+          <span class="lang-es">El Método</span>
+        </p>
+        <h2 class="method-heading anim-fade-up">
+          <span class="lang-en">Stop telling yourself what to believe.<br>Start asking questions your brain can't ignore.</span>
+          <span class="lang-es">Deja de decirte qué creer.<br>Empieza a hacer preguntas que tu cerebro no puede ignorar.</span>
+        </h2>
+
+        <div class="comparison">
+          <div class="comparison-card comparison-old anim-fade-up">
+            <span class="comparison-label">
+              <span class="lang-en">Affirmation</span>
+              <span class="lang-es">Afirmación</span>
+            </span>
+            <p class="comparison-text">
+              <span class="lang-en">"I am confident."</span>
+              <span class="lang-es">"Soy seguro de mí mismo."</span>
+            </p>
+            <p class="comparison-result">
+              <i class="ph ph-x-circle"></i>
+              <span class="lang-en">Your brain resists what it doesn't believe.</span>
+              <span class="lang-es">Tu cerebro rechaza lo que no cree.</span>
+            </p>
+          </div>
+
+          <div class="comparison-arrow">
+            <i class="ph ph-arrow-right"></i>
+          </div>
+
+          <div class="comparison-card comparison-new anim-fade-up anim-delay-1">
+            <span class="comparison-label">
+              <span class="lang-en">Empowering Question</span>
+              <span class="lang-es">Pregunta Empoderadora</span>
+            </span>
+            <p class="comparison-text comparison-text-question">
+              <span class="lang-en">"Why am I so confident?"</span>
+              <span class="lang-es">"¿Por qué soy tan seguro?"</span>
+            </p>
+            <p class="comparison-result comparison-result-good">
+              <i class="ph ph-check-circle"></i>
+              <span class="lang-en">Your brain searches for proof.</span>
+              <span class="lang-es">Tu cerebro busca la prueba.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="method-science anim-fade-up">
+          <p>
+            <span class="lang-en">When you ask <em>"Why am I so confident?"</em>, your brain's Reticular Activating System — a neural network that filters what you notice — begins scanning reality for evidence. Research published in <strong>Psychological Science</strong> found that people who used interrogative self-talk significantly outperformed those who used declarative self-talk. You're not faking it. You're searching.</span>
+            <span class="lang-es">Cuando preguntas <em>"¿Por qué soy tan seguro?"</em>, el Sistema Activador Reticular de tu cerebro — una red neuronal que filtra lo que notas — comienza a buscar evidencia en la realidad. Investigaciones publicadas en <strong>Psychological Science</strong> encontraron que las personas que usaron auto-diálogo interrogativo superaron significativamente a quienes usaron auto-diálogo declarativo. No estás fingiendo. Estás buscando.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+      <div class="benefits-inner">
+        <p class="section-overline anim-fade-up">
+          <span class="lang-en">Why It Works</span>
+          <span class="lang-es">Por Qué Funciona</span>
+        </p>
+        <h2 class="benefits-heading anim-fade-up">
+          <span class="lang-en">Your brain is a search engine.<br>Give it a better query.</span>
+          <span class="lang-es">Tu cerebro es un motor de búsqueda.<br>Dale una mejor consulta.</span>
+        </h2>
+
+        <div class="benefits-grid">
+          <div class="benefit-card anim-fade-up">
+            <div class="benefit-icon"><i class="ph ph-brain"></i></div>
+            <h3>
+              <span class="lang-en">Activates your RAS</span>
+              <span class="lang-es">Activa tu SAR</span>
+            </h3>
+            <p>
+              <span class="lang-en">Your Reticular Activating System starts filtering reality for evidence that the question's assumption is true.</span>
+              <span class="lang-es">Tu Sistema Activador Reticular comienza a filtrar la realidad buscando evidencia de que la suposición de la pregunta es verdadera.</span>
+            </p>
+          </div>
+          <div class="benefit-card anim-fade-up anim-delay-1">
+            <div class="benefit-icon"><i class="ph ph-shield-check"></i></div>
+            <h3>
+              <span class="lang-en">Bypasses resistance</span>
+              <span class="lang-es">Evita la resistencia</span>
+            </h3>
+            <p>
+              <span class="lang-en">Your mind can dismiss a statement it doesn't believe. It cannot dismiss a question — it has to search for an answer.</span>
+              <span class="lang-es">Tu mente puede descartar una declaración que no cree. No puede descartar una pregunta — tiene que buscar una respuesta.</span>
+            </p>
+          </div>
+          <div class="benefit-card anim-fade-up anim-delay-2">
+            <div class="benefit-icon"><i class="ph ph-chart-line-up"></i></div>
+            <h3>
+              <span class="lang-en">Compounds over time</span>
+              <span class="lang-es">Se acumula con el tiempo</span>
+            </h3>
+            <p>
+              <span class="lang-en">Each question rewires a small neural pathway. Daily practice builds momentum that affirmations never could.</span>
+              <span class="lang-es">Cada pregunta reconecta una pequeña vía neuronal. La práctica diaria construye un impulso que las afirmaciones nunca podrían.</span>
+            </p>
+          </div>
+          <div class="benefit-card anim-fade-up anim-delay-3">
+            <div class="benefit-icon"><i class="ph ph-heart"></i></div>
+            <h3>
+              <span class="lang-en">Feels natural</span>
+              <span class="lang-es">Se siente natural</span>
+            </h3>
+            <p>
+              <span class="lang-en">No forced positivity. No pretending. Just honest questions that let your mind do what it does best — find answers.</span>
+              <span class="lang-es">Sin positividad forzada. Sin pretender. Solo preguntas honestas que dejan a tu mente hacer lo que mejor sabe — encontrar respuestas.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Showcase / Screenshots -->
+    <section class="showcase" id="showcase">
+      <div class="showcase-inner">
+        <p class="section-overline anim-fade-up">
+          <span class="lang-en">The App</span>
+          <span class="lang-es">La App</span>
+        </p>
+        <h2 class="showcase-heading anim-fade-up">
+          <span class="lang-en">Beautiful questions, designed to land.</span>
+          <span class="lang-es">Preguntas hermosas, diseñadas para quedarse.</span>
+        </h2>
+        <p class="showcase-sub anim-fade-up">
+          <span class="lang-en">Every detail — from typography to transitions — is crafted to make each question feel like it was written just for you.</span>
+          <span class="lang-es">Cada detalle — de la tipografía a las transiciones — está diseñado para que cada pregunta se sienta escrita para ti.</span>
+        </p>
+
+        <div class="showcase-phones">
+          <div class="showcase-phone anim-fade-up">
+            <div class="phone-device">
+              <img src="assets/screenshots/en/home-swiper.png" alt="Home screen — swipeable question cards" class="phone-screen lang-en" loading="lazy">
+              <img src="assets/screenshots/es/home-swiper.png" alt="Pantalla principal — tarjetas deslizables" class="phone-screen lang-es" loading="lazy">
+            </div>
+            <p class="showcase-phone-caption">
+              <span class="lang-en">Swipe through your daily deck</span>
+              <span class="lang-es">Desliza tu baraja diaria</span>
+            </p>
+          </div>
+          <div class="showcase-phone anim-fade-up anim-delay-1">
+            <div class="phone-device">
+              <img src="assets/screenshots/en/categories.png" alt="Browse 44 life categories" class="phone-screen lang-en" loading="lazy">
+              <img src="assets/screenshots/es/categories.png" alt="Explora 44 categorías de vida" class="phone-screen lang-es" loading="lazy">
+            </div>
+            <p class="showcase-phone-caption">
+              <span class="lang-en">44 categories for every area</span>
+              <span class="lang-es">44 categorías para cada área</span>
+            </p>
+          </div>
+          <div class="showcase-phone anim-fade-up anim-delay-2">
+            <div class="phone-device">
+              <img src="assets/screenshots/en/write-practice.png" alt="Write practice — journal your reflections" class="phone-screen lang-en" loading="lazy">
+              <img src="assets/screenshots/es/write-practice.png" alt="Práctica de escritura — escribe tus reflexiones" class="phone-screen lang-es" loading="lazy">
+            </div>
+            <p class="showcase-phone-caption">
+              <span class="lang-en">Journal your reflections</span>
+              <span class="lang-es">Escribe tus reflexiones</span>
+            </p>
+          </div>
+          <div class="showcase-phone anim-fade-up anim-delay-3">
+            <div class="phone-device">
+              <img src="assets/screenshots/en/themes.png" alt="12+ handcrafted card themes" class="phone-screen lang-en" loading="lazy">
+              <img src="assets/screenshots/es/themes.png" alt="12+ temas diseñados a mano" class="phone-screen lang-es" loading="lazy">
+            </div>
+            <p class="showcase-phone-caption">
+              <span class="lang-en">12+ handcrafted themes</span>
+              <span class="lang-es">12+ temas diseñados a mano</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="features-inner">
+        <p class="section-overline anim-fade-up">
+          <span class="lang-en">Features</span>
+          <span class="lang-es">Funciones</span>
+        </p>
+        <h2 class="features-heading anim-fade-up">
+          <span class="lang-en">A daily practice, not another app.</span>
+          <span class="lang-es">Una práctica diaria, no otra app más.</span>
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card anim-fade-up">
+            <i class="ph ph-pencil-line feature-icon"></i>
+            <h3>
+              <span class="lang-en">Write Practice</span>
+              <span class="lang-es">Práctica de Escritura</span>
+            </h3>
+            <p>
+              <span class="lang-en">Journal your reflections to each question. Over time, your answers become a record of who you're becoming.</span>
+              <span class="lang-es">Escribe tus reflexiones a cada pregunta. Con el tiempo, tus respuestas se convierten en un registro de quién te estás convirtiendo.</span>
+            </p>
+          </div>
+          <div class="feature-card anim-fade-up anim-delay-1">
+            <i class="ph ph-timer feature-icon"></i>
+            <h3>
+              <span class="lang-en">Reflect Practice</span>
+              <span class="lang-es">Práctica de Reflexión</span>
+            </h3>
+            <p>
+              <span class="lang-en">Sit with each question in timed silence — 10 to 60 seconds. No writing, no doing. Just presence.</span>
+              <span class="lang-es">Siéntate con cada pregunta en silencio cronometrado — 10 a 60 segundos. Sin escribir, sin hacer. Solo presencia.</span>
+            </p>
+          </div>
+          <div class="feature-card anim-fade-up anim-delay-2">
+            <i class="ph ph-paint-brush feature-icon"></i>
+            <h3>
+              <span class="lang-en">Card Themes</span>
+              <span class="lang-es">Temas de Tarjetas</span>
+            </h3>
+            <p>
+              <span class="lang-en">12 handcrafted themes — Linen, Night Desk, Terracotta, Olive Press, and more. Or design your own.</span>
+              <span class="lang-es">12 temas diseñados a mano — Lino, Escritorio Nocturno, Terracota, Prensa de Oliva, y más. O diseña el tuyo.</span>
+            </p>
+          </div>
+          <div class="feature-card anim-fade-up anim-delay-3">
+            <i class="ph ph-squares-four feature-icon"></i>
+            <h3>
+              <span class="lang-en">Home & Lock Widgets</span>
+              <span class="lang-es">Widgets de Pantalla</span>
+            </h3>
+            <p>
+              <span class="lang-en">Daily questions on your home screen and lock screen. A gentle nudge that meets you where you are.</span>
+              <span class="lang-es">Preguntas diarias en tu pantalla de inicio y pantalla de bloqueo. Un recordatorio sutil que te encuentra donde estás.</span>
+            </p>
+          </div>
+          <div class="feature-card anim-fade-up anim-delay-4">
+            <i class="ph ph-fire feature-icon"></i>
+            <h3>
+              <span class="lang-en">Streaks & Achievements</span>
+              <span class="lang-es">Rachas y Logros</span>
+            </h3>
+            <p>
+              <span class="lang-en">27 milestones across 7 categories. Track your growth, celebrate your consistency.</span>
+              <span class="lang-es">27 hitos en 7 categorías. Rastrea tu crecimiento, celebra tu constancia.</span>
+            </p>
+          </div>
+          <div class="feature-card anim-fade-up anim-delay-5">
+            <i class="ph ph-sparkle feature-icon"></i>
+            <h3>
+              <span class="lang-en">Custom Questions</span>
+              <span class="lang-es">Preguntas Personalizadas</span>
+            </h3>
+            <p>
+              <span class="lang-en">Write your own empowering questions and mix them into your daily practice alongside the curated library.</span>
+              <span class="lang-es">Escribe tus propias preguntas empoderadoras y mézclalas en tu práctica diaria junto con la biblioteca curada.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="testimonials-inner">
+        <p class="section-overline anim-fade-up">
+          <span class="lang-en">Real People</span>
+          <span class="lang-es">Personas Reales</span>
+        </p>
+        <h2 class="testimonials-heading anim-fade-up">
+          <span class="lang-en">The practice that keeps them coming back.</span>
+          <span class="lang-es">La práctica que los hace volver.</span>
+        </h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card anim-fade-up">
+            <p class="testimonial-text">
+              <span class="lang-en">"I kept waiting to feel confident before acting. These questions flipped it. I started acting, and confidence followed."</span>
+              <span class="lang-es">"Seguía esperando sentirme segura antes de actuar. Estas preguntas lo invirtieron. Empecé a actuar, y la confianza llegó."</span>
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Amy W.</span>
+              <span class="testimonial-time">
+                <span class="lang-en">4 months</span>
+                <span class="lang-es">4 meses</span>
+              </span>
+            </div>
+          </div>
+          <div class="testimonial-card anim-fade-up anim-delay-1">
+            <p class="testimonial-text">
+              <span class="lang-en">"Honestly I was skeptical. But something about asking 'why' instead of stating it hit different. My inner chatter changed."</span>
+              <span class="lang-es">"Honestamente era escéptico. Pero algo sobre preguntar 'por qué' en vez de declararlo fue diferente. Mi diálogo interno cambió."</span>
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Eduardo F.</span>
+              <span class="testimonial-time">
+                <span class="lang-en">6 months</span>
+                <span class="lang-es">6 meses</span>
+              </span>
+            </div>
+          </div>
+          <div class="testimonial-card anim-fade-up anim-delay-2">
+            <p class="testimonial-text">
+              <span class="lang-en">"Three questions every morning before I open my phone. It's the best ten minutes of my day, and it genuinely changed how I see things."</span>
+              <span class="lang-es">"Tres preguntas cada mañana antes de abrir mi teléfono. Son los mejores diez minutos de mi día, y genuinamente cambió cómo veo las cosas."</span>
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Melissa T.</span>
+              <span class="testimonial-time">
+                <span class="lang-en">3 months</span>
+                <span class="lang-es">3 meses</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="download">
+      <div class="cta-inner">
+        <h2 class="cta-heading anim-fade-up">
+          <span class="lang-en">Your questions are about to change everything.</span>
+          <span class="lang-es">Tus preguntas están a punto de cambiarlo todo.</span>
+        </h2>
+        <p class="cta-sub anim-fade-up">
+          <span class="lang-en">Ask Better. Become More.</span>
+          <span class="lang-es">Pregunta Mejor. Conviértete en Más.</span>
+        </p>
+        <div class="cta-buttons anim-fade-up anim-delay-1">
+          <a href="https://apps.apple.com/us/app/ask-better-daily-questions/id6759526483" class="store-badge" target="_blank" rel="noopener">
+            <img src="assets/app-store-badge.svg" alt="Download on the App Store" width="168" height="56">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=dev.armandojimenez.afformations" class="store-badge" target="_blank" rel="noopener">
+            <img src="assets/google-play-badge.svg" alt="Get it on Google Play" width="189" height="56">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/app-icon.png" alt="" width="28" height="28">
+        <span>Ask Better</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://armandojimenez.dev/ask-better/privacy" class="footer-link">
+          <span class="lang-en">Privacy Policy</span>
+          <span class="lang-es">Política de Privacidad</span>
+        </a>
+        <span class="footer-links-divider">&middot;</span>
+        <a href="https://armandojimenez.dev/ask-better/terms" class="footer-link">
+          <span class="lang-en">Terms of Use</span>
+          <span class="lang-es">Términos de Uso</span>
+        </a>
+        <span class="footer-links-divider">&middot;</span>
+        <a href="https://armandojimenez.dev" class="footer-link" target="_blank" rel="noopener">armandojimenez.dev</a>
+      </nav>
+      <p class="footer-copy">
+        <span class="lang-en">&copy; 2026 Armando Jimenez. All rights reserved.</span>
+        <span class="lang-es">&copy; 2026 Armando Jimenez. Todos los derechos reservados.</span>
+      </p>
+      <p class="footer-tagline">
+        <span class="lang-en">No ads. No noise. Just better questions.</span>
+        <span class="lang-es">Sin anuncios. Sin ruido. Solo mejores preguntas.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
