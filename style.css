@@ -827,7 +827,7 @@ button:focus-visible {
 .showcase-phones {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-8) var(--space-6);
+  gap: var(--space-6) var(--space-3);
   justify-items: center;
 }
 
@@ -847,10 +847,13 @@ button:focus-visible {
   max-width: 200px;
   margin: 0 auto;
   background: #2C2520;
+  border-radius: 28px;
+  padding: 8px;
   box-shadow: var(--shadow-xl);
 }
 
 .showcase-phone .phone-screen {
+  border-radius: 20px;
   background: linear-gradient(160deg, #3A3330 0%, #272220 100%);
 }
 
@@ -863,8 +866,18 @@ button:focus-visible {
 }
 
 @media (min-width: 768px) {
+  .showcase-phones {
+    gap: var(--space-8);
+  }
+
   .showcase-phone .phone-device {
     max-width: 230px;
+    border-radius: 36px;
+    padding: 10px;
+  }
+
+  .showcase-phone .phone-screen {
+    border-radius: 26px;
   }
 
   .showcase-phone:nth-child(even) {
