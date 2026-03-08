@@ -9,9 +9,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://armandojimenez.dev/ask-better/">
 
-  <!-- Prevent FOUC for saved language -->
+  <!-- Prevent FOUC for saved language / URL param -->
   <script>
-    try { var s = localStorage.getItem('askbetter-lang'); if (s === 'es') { document.documentElement.setAttribute('data-lang', 'es'); document.documentElement.setAttribute('lang', 'es'); } } catch(e) {}
+    try { var p = new URLSearchParams(window.location.search).get('lang'); var s = p === 'es' || p === 'en' ? p : localStorage.getItem('askbetter-lang'); if (s === 'es') { document.documentElement.setAttribute('data-lang', 'es'); document.documentElement.setAttribute('lang', 'es'); } if (p) { localStorage.setItem('askbetter-lang', p); } } catch(e) {}
   </script>
 
   <!-- Safari Smart App Banner -->
