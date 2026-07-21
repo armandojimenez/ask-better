@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /ask-better/
+
+Sitemap: https://armandojimenez.dev/ask-better/sitemap.xml
